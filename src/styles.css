@@ -17,6 +17,7 @@ body {
   background-color: var(--blue2);
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -25,4 +26,97 @@ body {
   background-color: var(--blue1);
   border-radius: 20px;
   box-shadow: 10px 10px 10px var(--shadowblack);
+}
+
+.upper-data {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.upper-data img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.weather-data {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  /* background-color: var(--shadowblack); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.location {
+  color: var(--white);
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.temprature {
+  color: var(--white);
+  text-align: center;
+  font-size: 4em;
+  font-weight: 900;
+}
+
+.more-info-label {
+  color: var(--white);
+}
+
+.more-info-container {
+  flex: 1;
+  background-color: var(--shadowwhite);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 1em;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.info-block-labelb {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.info-block-label {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-block-label img {
+  width: 1em;
+}
+
+.info-block-label {
+  width: 1em;
+}
+
+.info-block-label span {
+  color: var(--white);
+  font-size: 0.8em;
+}
+
+.info-block-value {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--white);
 }
